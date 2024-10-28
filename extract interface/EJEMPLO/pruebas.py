@@ -1,9 +1,9 @@
 from envio import Envio
 
 if __name__ == "__main__":
-    # Lista de distancias y pesos para los ejemplos
+
     pedidos = [
-        (10, 2),  # Distancia, Peso
+        (10, 2),
         (15, 5),
         (8, 1),
         (20, 3),
@@ -13,12 +13,12 @@ if __name__ == "__main__":
         (12, 1),
         (9, 5),
         (14, 3),
-        (12,4)
+        (12,1)
     ]
 
-    # Crear y mostrar información de cada pedido
+
     for i, (distancia, peso) in enumerate(pedidos, start=1):
         envio = Envio(distancia, peso)
         print(f"Pedido {i}:")
         print(envio.mostrar_informacion())
-        print()  # Línea en blanco para separar pedidos
+        print()

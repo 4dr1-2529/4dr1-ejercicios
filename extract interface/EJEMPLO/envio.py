@@ -2,14 +2,14 @@ import random
 import string
 
 class Envio:
-    contador = 0  # Contador para generar códigos únicos
+    contador = 0
 
     def __init__(self, distancia: float, peso: float):
         Envio.contador += 1
         self.distancia = distancia
         self.peso = peso
-        self.precio = self.calcular_precio()  # Calcula el precio al crear el objeto
-        self.codigo_rastreo = self.generar_codigo_rastreo()  # Genera un código único
+        self.precio = self.calcular_precio()
+        self.codigo_rastreo = self.generar_codigo_rastreo()
 
     def calcular_precio(self) -> float:
         return self.distancia * self.peso * 0.5
